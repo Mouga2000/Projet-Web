@@ -45,9 +45,9 @@ const Sectionier = () => {
                     le lieu où tous les délices se confrontent
                     </p>
                 
-                <p style={{textAlign: 'left', marginLeft:'50px', fontSize:20, fontWeight:'bold'}}> 
+                {/* <p style={{textAlign: 'left', marginLeft:'50px', fontSize:20, fontWeight:'bold'}}> 
                     Menu proposé
-                    </p>
+                    </p> */}
             </div>
         </section>
     );

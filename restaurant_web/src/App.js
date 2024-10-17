@@ -61,7 +61,8 @@ import Footer from './composant/Footer';
 import Sectionier from './composant/Section_page';
 import Formulaire from './composant/Formulaire';
 import Pied_page from './composant/pied_page';
-import Services from './composant/Nos_service/nos_service';
+import Services from './composant/Accueil/nos_service';
+import Seconnecter from './composant/Accueil/Seconnecter';
 
 const App = () => {
     return (
@@ -71,6 +72,7 @@ const App = () => {
               <Sectionier/>
               <Formulaire/>
               <Pied_page/>
+              
            
            
         </div>
