@@ -1,11 +1,14 @@
 import React from 'react';
 import Services from './Accueil/nos_service';
-import { BrowserRouter as Router, Route, Switch, Link, Routes } from 'react-router-dom';
+import Apropos from './Accueil/Apropos';
+import Accueil from './Accueil/Accueil';
+import SeConnecter from './Accueil/Seconnecter';
+import {Link} from 'react-router-dom';
 
 
 const Nav = () => {
     return (
-        <Router>
+        
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" 
             style={{ 
                 //margintop: '60px',
@@ -26,28 +29,23 @@ const Nav = () => {
                                 <a className='nav-link' style={{color: '#ffffff' }} href="#">Jeux & Promos</a>
                             </li>
                             <li className="nav-item">
-                                <a className='nav-link' style={{color: '#ffffff' }} href="#">Accueil</a>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to="/acceuil">Accueil</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className='nav-link' style={{color: '#ffffff' }} to='./Accueil/nos_service'>Nos Services</Link>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to='/service'>Nos Services</Link>
                             </li>
                             <li className="nav-item">
-                                <a className='nav-link' style={{color: '#ffffff' }} href="#">À propos</a>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to="/apropos">À propos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className='nav-link' style={{color: '#ffffff' }} href="#">Se connecter</a>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to="/seconnecter">Se connecter</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <Routes>
-                <Route path='/Accueil/nos_service' Component={<Services />} />
-            </Routes>
             
-        </Router>
-        
     );
 };
 

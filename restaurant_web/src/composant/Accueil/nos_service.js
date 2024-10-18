@@ -5,7 +5,7 @@ import Pied_page from '../pied_page';
 
 const Services = () => {
     return (
-        <div style={{background: '#cfbd97'}}>
+        <div  style={{background: '#cfbd97'}}>
             
             <Nav />
             <Sectionier/>

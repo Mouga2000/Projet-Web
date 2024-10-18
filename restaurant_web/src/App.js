@@ -35,47 +35,45 @@ function App() {/*
 }
 
 export default App;
-/*
+*/
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Main'; // Importation de Main au lieu de App
-import './index.css';
-
-ReactDOM.render(
-    <React.StrictMode>
-        <Main />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
-
-*/
-
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './composant/Header';
-import Nav from './composant/entete';
-import Section from './composant/Section';
-import Aside from './composant/Aside';
-import Footer from './composant/Footer';
-import Sectionier from './composant/Section_page';
-import Formulaire from './composant/Formulaire';
-import Pied_page from './composant/pied_page';
 import Services from './composant/Accueil/nos_service';
 import Seconnecter from './composant/Accueil/Seconnecter';
+import CreerCompte from './composant/Accueil/CreerCompte';
+import Apropos from './composant/Accueil/Apropos';
+import Accueil from './composant/Accueil/Accueil';
+import Nav from './composant/entete';
+
+
+
 
 const App = () => {
     return (
+      <Router>
         <div style={{background: 'linear-gradient(180deg,#cfbd97, #000000 )'}}>
            
-              <Nav />              
-              <Sectionier/>
+              {/*<Nav />*/}
+              <Routes>
+                <Route path="/" element={<Accueil/>} />
+                <Route path="/acceuil" element={<Accueil/>} />
+                <Route path="/service" element={<Services />} />
+                <Route path="/apropos" element={<Apropos />} />
+                <Route path="/seconnecter" element={<Seconnecter />} />
+                <Route path="/creercompte" element={<CreerCompte />} /> 
+                        
+              </Routes>         
+              {/* <Sectionier/>
               <Formulaire/>
-              <Pied_page/>
+              <Pied_page/> */}
               
            
            
         </div>
+      </Router>
     );
 };
 

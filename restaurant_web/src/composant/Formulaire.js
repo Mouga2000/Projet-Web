@@ -69,13 +69,14 @@ const Formulaire = () => {
                             
                     />
                         
-                    <input 
+                    <textarea
                         type="text" 
                         id="description" 
                         value={description[i]} 
                         readOnly
                         style={{backgroundColor:'#cfbd97', color: '#000000', border: 'none', outline: 'none',
-                            textAlign: 'justify', fontFamily: 'times new romain', display: 'flex', width:'100%', height: '115px'
+                            textAlign: 'justify', fontFamily: 'times new romain', display: 'flex', width:'100%', height: '105px', 
+                            overflow:'hidden', textOverflow:'ellipsis', padding:'10px'
                         }}
                             
                     />
@@ -84,7 +85,7 @@ const Formulaire = () => {
                         <button type="submit"
                         style={{backgroundColor:'#000000', color: '#ffffff', border: 'none', outline: 'none',
                             textAlign: 'justify', fontFamily: 'times new romain', borderRadius: '25% 0 0 25%', position: 'relative',
-                            bottom:'0', right:'0'
+                            bottom:'0', right:'0', top:'10px'
                         }} >
                             En savoir plus</button>
                     </div>

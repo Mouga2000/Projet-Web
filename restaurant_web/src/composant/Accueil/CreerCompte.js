@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from 'react-router-dom';
 
 
 
 
 const CreerCompte = () => {
+    const [sex, setSex] = useState('');
+
+    const handleChange = (event) => {
+        setSex(event.target.value);
+    };
+
+
     const handleSubmit = (event) => {
         event.preventDefault();
         // Gestion de la soumission du formulaire
@@ -24,16 +32,18 @@ const CreerCompte = () => {
         console.log('motConfig', mot_config);
         console.log('sex', sex);
 
-        // Ajoutez ici votre logique de connexion
+        // Ajoutez la logique de connexion
     };
 
     return (
-        <div className="container mt-5" style={{fontFamily:'times new roman'}}>
-            <div className="row justify-content-center" >
+        <div className="container " style={{fontFamily:'times new roman', height:'100vh'}}>
+            <div className="row justify-content-center" style={{paddingTop:'30px'}}>
                 <div className="col-md-6">
                     
                     <div className="card p-4" style={{background: 'linear-gradient(215deg,#000000, #cfbd97)'}}>
-                        <a href='#' style={{color:'#ffffff'}}>Retour</a>
+                        
+                        <Link to="/acceuil" style={{color:'#ffffff'}}>Retour</Link>
+                        
                         <h1> </h1>
                         <h3 className="text-center" style={{color:'#ffffff'}}> Veuillez entrer les informations necessaire à la création de votre compte utilisateur</h3>
                         
@@ -106,21 +116,25 @@ const CreerCompte = () => {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="sex">Sex</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
+                                <label htmlFor="sex">Sexe</label>
+                                <select
                                     id="sex"
                                     name="sex"
-                                    placeholder="sex"
+                                    className="form-control"
+                                    value={sex}
+                                    onChange={handleChange}
                                     required
-                                />
+                                >
+                                    <option value="">Sélectionnez votre sexe</option>
+                                    <option value="1">Masculin</option>
+                                    <option value="2">Féminin</option>
+                                </select>
                             </div>
                             <h1> </h1>
                             <button type="submit" className="btn btn-warning btn-block" style={{background:'linear-gradient(180deg,#000000, #cfbd97)', position:'relative', left:'40%'}}>Créer le compte</button>
                             <p className="text-center mt-3">
                                 Vous avez un compte ? 
-                                <a href="#">Se Connecter</a>
+                                <Link to="/seconnecter">Se connecter</Link>
                             </p>
                         </form>
                         

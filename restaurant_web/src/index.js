@@ -5,10 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Services from './composant/Accueil/nos_service';
-import Apropos from './composant/Accueil/Apropos';
-import Seconnecter from './composant/Accueil/Seconnecter';
-import CreerCompte from './composant/Accueil/CreerCompte';
+import Accueil from './composant/Accueil/Accueil';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,10 +13,6 @@ root.render(
   <React.StrictMode>
 
     <App />
-    {/* <CreerCompte/> */}
-    {/* <Seconnecter/> */}
-    {/* <Apropos/> */}
-    {/* <Services/> */}
     
   </React.StrictMode>
 );

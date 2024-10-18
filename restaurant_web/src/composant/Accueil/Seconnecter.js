@@ -1,51 +1,10 @@
-// import React from 'react';
-// import { Form } from 'react-router-dom';
-// import Imagecon from '../../image/i14.png';
-
-
-// const Seconnecter = () => {
-//     return (
-        
-//         <div class="container mt-5">
-//             <div class="row justify-content-center">
-//                 <div class="col-md-6">
-//                     <div class="card p-4" style={{fontFamily:'times new roman'}}>
-//                         <a >Retour</a>
-//                         <h2 class="text-center">Se connecter</h2>
-//                         <form>
-//                             <div class="form-group">
-//                                 <label for="email">Email</label>
-//                                 <input type="email" class="form-control" id="email" placeholder="Entrer votre email" required/>
-//                             </div>
-//                             <div class="form-group">
-//                                 <label for="motdepasse">Mot de passe</label>
-//                                 <input type="password" class="form-control" id="motdepasse" placeholder="Entrer votre mot de passe" required/>
-//                             </div>
-//                             <p class="text-right">
-//                                 <a href="#" class="text-muted">Mot de passe oublié ?</a>
-//                             </p>
-//                             <button type="submit" class="btn btn-warning btn-block" >Se connecter</button>
-//                             <p class="text-center mt-3">
-//                                 Vous n'avez pas de compte ? 
-//                                 <a href="Creer_compte.html">Créer un nouveau compte</a>
-//                             </p>
-//                         </form>
-//                         <img src={Imagecon} alt='Image de connexion'/>
-//                     </div>
-//                 </div>
-//             </div>
-//     </div>
-
-        
-//     );
-// };
-
-// export default Seconnecter;
-
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imagecon from '../../image/i14.png';
+import CreerCompte from './CreerCompte';
+
+import {Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
@@ -61,12 +20,15 @@ const SeConnecter = () => {
     };
 
     return (
-        <div className="container mt-5" style={{fontFamily:'times new roman'}}>
-            <div className="row justify-content-center" >
+       
+        <div className="container " style={{fontFamily:'times new roman', height:'100vh'}}>
+            <div className="row justify-content-center" style={{paddingTop:'75px'}}>
                 <div className="col-md-6">
                     
                     <div className="card p-4" style={{background: 'linear-gradient(1800deg, #cfbd97,#000000)'}}>
-                        <a href="#" style={{color:'#ffffff'}}>Retour</a>
+                        
+                        <Link to="/acceuil" style={{color:'#ffffff'}}>Retour</Link>
+                        
                         <h2 className="text-center" 
                         style={{color:'#ffffff',
                             backgroundImage: `url(${Imagecon})`,
@@ -107,7 +69,7 @@ const SeConnecter = () => {
                             <button type="submit" className="btn btn-warning btn-block" style={{background:'#ffffff',  position:'relative', left:'40%'}}>Se connecter</button>
                             <p className="text-center mt-3">
                                 Vous n'avez pas de compte ? 
-                                <a href="Creer_compte.html">Créer un nouveau compte</a>
+                                <Link to="/creercompte">Créer un nouveau compte</Link>
                             </p>
                         </form>
                         
@@ -115,6 +77,9 @@ const SeConnecter = () => {
                 </div>
             </div>
         </div>
+
+        
+        
     );
 };
 
