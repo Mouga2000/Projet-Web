@@ -64,12 +64,13 @@ const App = () => {
                 <Route path="/apropos" element={<Apropos />} />
                 <Route path="/seconnecter" element={<Seconnecter />} />
                 <Route path="/creercompte" element={<CreerCompte />} /> 
+                {/* <Route path="/" element={<AccueilAdmin/>} /> 
+                <Route path="/gestionEmploie" element={<GestionEmploie/>} /> */}
+                           
                         
               </Routes>         
-              {/* <Sectionier/>
-              <Formulaire/>
-              <Pied_page/> */}
-              
+
+                           
            
            
         </div>
