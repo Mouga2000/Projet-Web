@@ -28,7 +28,7 @@ const FonctionAdmin = () => {
 
     return (
        
-        <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',
+        <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',height:'100%',
             textAlign: 'center', display: 'flex',  gap: '30px', flexWrap: 'wrap', paddingTop:'50px'}} >
 
 
@@ -41,7 +41,7 @@ const FonctionAdmin = () => {
             }}
             onClick={clickemploi}
             >
-                GESTION DES EMPLOIS
+                GESTION DES EMPLOYES
             </button>
             <button class="col-3 " style={{
                 color:'#ffffff',

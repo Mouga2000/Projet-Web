@@ -13,14 +13,13 @@ const AccueilAdmin = () => {
     const test='ADMINISTRATION APPLICATION WEB';
     return (
         
-            <div style={{background: '#cfbd97', display:'flex', textAlign:'center'}}>
+            <div style={{background: '#cfbd97', display:'flex', textAlign:'center', height:'100%'}}>
             
                 <Barre/>
-            
-                <div style={{background: 'linear-gradient(90deg, #000000, #cfbd97)', textAlign:'center',flex:1,
-                    color:'#ffffff', fontFamily:'times new roman', height:'150px', alignItems:'center'}}>
-                        <Entete text={test}/>
-                        <FonctionAdmin/>
+                
+                <div style={{ textAlign:'center',flex:1, color:'#ffffff', fontFamily:'times new roman', alignItems:'center', height:'100%'}}>                  
+                    <Entete text={test}/>
+                    <FonctionAdmin/>
                     
                 </div>
                     {/* <PiedAdmin/>     */}

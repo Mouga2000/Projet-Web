@@ -1,9 +1,10 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from '../entete';
 import Sectionier from '../Section_page';
 import Pied_page from '../pied_page';
 
-const Apropos = () => {
+const Services = () => {
     return (
         <div style={{
             background: '#cfbd97',
@@ -22,7 +23,7 @@ const Apropos = () => {
                 flexDirection: 'column', 
                 justifyContent: 'center',
             }}>
-                <h2 style={{ textAlign: 'center' }}>A Propos du Restaurant</h2>
+                <h2 style={{ textAlign: 'center' }}>Services Proposées</h2>
                 <p style={{ textAlign: 'justify', fontFamily: 'Times New Roman', fontSize: '18px' }}>
                     ......................s
                 </p>
@@ -34,4 +35,4 @@ const Apropos = () => {
     );
 };
 
-export default Apropos;
+export default Services;

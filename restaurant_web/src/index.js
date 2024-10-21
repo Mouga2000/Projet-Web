@@ -18,11 +18,11 @@ root.render(
   <React.StrictMode>
  
 
-      {/* <App />  */}
+      {/*  <App />   */}
       
-       <Logique/>
-
-      {/*<App/>*/}
+      <Logique/>
+      
+     {/* <App/>*/}
 
 
     

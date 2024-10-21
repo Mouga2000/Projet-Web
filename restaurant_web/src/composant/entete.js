@@ -11,8 +11,8 @@ const Nav = () => {
         
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" 
             style={{ 
-                //margintop: '60px',
-                background: 'linear-gradient(90deg, #000000, #cfbd97)', // Dégradé de bleu à vert
+               
+                background: 'linear-gradient(90deg, #000000, #cfbd97)', 
                 
             }}
             >

@@ -47,11 +47,11 @@ const Formulaire = () => {
                     
                     />
                     
-                    {/* <h2 >Inscription</h2> */}
+                   
                     <input
                         type="text"
                         id="name"
-                        value={produit} // Texte pré-écrit
+                        value={produit} 
                         readOnly
                         style={{backgroundColor:'#cfbd97', color: '#000000', border: 'none', outline: 'none',
                             textAlign: 'center', fontFamily: 'times new romain', fontSize:'20px',  width:'100%'
