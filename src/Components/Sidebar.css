@@ -1,0 +1,115 @@
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que le contenu est bien réparti */
+    align-items: center; /* Centre les éléments horizontalement */
+    padding: 20px 0; /* Ajoute du padding en haut et en bas */
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .avatar {
+    background: url('/src/assets/images/avatar.png') no-repeat center center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  :link{
+    text-decoration: none;
+  }
+  
+  .profile h3 {
+    margin: 10px 0 0;
+  }
+  
+  .logo {
+    background: url('/src/assets/images/logo.png') no-repeat center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* S'assure que le menu prend toute la largeur */
+  }
+  
+  .menu li {
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left; /* Aligne le texte à gauche */
+  }
+  
+  .menu li:hover {
+    background-color: #333;
+  }
+  
+  .logout {
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    color: #CFBD97;
+    font-family: 'Times New Roman';
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  /* --- Responsive Design --- */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+    
+    .menu li {
+      padding: 10px 15px;
+    }
+  
+    .avatar {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 100px;
+    }
+  
+    .menu li {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .avatar {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .logout {
+      font-size: 12px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 600px) {
+    .sidebar {
+      height: 100vh;
+    }
+    
+    .menu li {
+      padding: 10px 12px;
+    }
+  }
+  
