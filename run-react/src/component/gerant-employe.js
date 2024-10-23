@@ -2,6 +2,8 @@ import React from "react";
 
 import Side_bar from "./side-bar-gerant";
 import Entete_g from "./entete-gerant";
+import Liste from "./listeEmploie";
+import InfoEmploie from "./infoEmploie";
 
 const Gerant_employe = () => {
 
@@ -14,7 +16,8 @@ const Gerant_employe = () => {
                     <Entete_g/>
                 </div>
                 <div>
-                    {/* Ajouter mon composant */}
+                    <InfoEmploie/>
+                    <Liste></Liste>
                 </div>
             </div>
         </div>

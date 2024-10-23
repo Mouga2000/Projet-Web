@@ -2,6 +2,7 @@ import React from "react";
 
 import Side_bar from "./side-bar-gerant";
 import Entete_g from "./entete-gerant";
+import Statistique from "./gerant-satistique";
 
 const Gerant_stat = () => {
 
@@ -14,7 +15,7 @@ const Gerant_stat = () => {
                     <Entete_g/>
                 </div>
                 <div>
-                    {/* Ajouter mon composant */}
+                    <Statistique/>
                 </div>
             </div>
         </div>

@@ -8,6 +8,8 @@ import Gerant_accueil from './component/Gerant_accueil';
 
 import { BrowserRouter as Router, Route, Switch, Link, Routes, RouterProvider } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom';
+import PageCreer from './component/pageCreer';
+import Statistique from './component/gerant-satistique';
 
 const routter = createBrowserRouter([
   {
@@ -29,6 +31,15 @@ const routter = createBrowserRouter([
   {
     path:'/gerant_satistique',
     element:<Gerant_stat></Gerant_stat>
+  },
+  {
+    path:'/page_creer',
+    element:<PageCreer></PageCreer>
+  }
+  ,
+  {
+    path:'/gestionEmploie',
+    element:<Gerant_employe></Gerant_employe>
   }
 ])
 
