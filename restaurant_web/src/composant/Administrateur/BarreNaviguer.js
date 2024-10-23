@@ -34,7 +34,7 @@ const Barre = () => {
                         <Link className="nav-link" to="/stats" style={{ color: "#cfbd97" }}>STATISTIQUES</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#" style={{ color: "#cfbd97" }}>PROMO & JEUX</Link>
+                        <Link className="nav-link" to="/accueil_jeu" style={{ color: "#cfbd97" }}>PROMO & JEUX</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="#" style={{ color: "#cfbd97" }}>GESTION DES RECLAMATIONS</Link>

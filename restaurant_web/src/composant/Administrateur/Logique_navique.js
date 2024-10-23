@@ -11,6 +11,9 @@ import AccueilAdmin from './Accueil_admin';
 import Statistique from './Stat/Statisques';
 import PageCreer from './Gestion_des_emploies/PageCreer';
 import CreerMenu from './Gestion_des_Menu/CreerMenu';
+import Accueil_Jeu from './Jeux&Promo/Accueil_Jeu';
+import Creer_jeu from './Jeux&Promo/Creer_jeux';
+import Creer_promo from './Jeux&Promo/Creer_promo';
 
 
 const Logique = () => {
@@ -26,6 +29,10 @@ const Logique = () => {
                 <Route path="/stats" element={<Statistique/>} />
                 <Route path='/page_creer' element={<PageCreer/>}/>
                 <Route path='/detail_menu' element={<CreerMenu/>}/>
+                <Route path='/accueil_jeu' element={<Accueil_Jeu/>}/>
+                <Route path='/creer jeu' element={<Creer_jeu/>}/>
+                <Route path='/creer promo' element={<Creer_promo/>}/>
+
             </Routes>
         
         </Router>

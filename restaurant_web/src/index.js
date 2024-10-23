@@ -10,7 +10,7 @@ import Accueil from './composant/Accueil/Accueil';
 import AccueilAdmin from './composant/Administrateur/Accueil_admin';
 import Logique from './composant/Administrateur/Logique_navique';
 
-//import App from './composant/stat/s2';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +18,7 @@ root.render(
   <React.StrictMode>
  
 
-      {/*  <App />   */}
+      
       
       <Logique/>
       

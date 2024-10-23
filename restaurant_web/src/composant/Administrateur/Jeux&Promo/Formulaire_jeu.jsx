@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
 
-const Contenu_menu = () => {
+const Formualire_jeu = () => {
     const [image, setImage] = useState(null);
     const [imageName, setImageName] = useState('');
     const [name, setName] = useState('');
-    const [quantity, setQuantity] = useState('');
-    const [prix, setPrix] = useState('');
-    const [description, setDescription] = useState('');
+    const [lien, setLien] = useState('');
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -16,26 +15,23 @@ const Contenu_menu = () => {
           image,
           imageName,
           name,
-          quantity,
-          prix,
-          description,
+          lien,
+          
         });
         // Réinitialiser les champs du formulaire
         setImage(null);
         setImageName('');
         setName('');
-        setQuantity('');
-        setPrix('');
-        setDescription('');
+        setLien('');
+       
       };
 
       const rejetter = () => {
         setImage(null);
         setImageName('');
         setName('');
-        setQuantity('');
-        setPrix('');
-        setDescription('');
+        setLien('');
+        
       };
   
     const handleImageUpload = (event) => {
@@ -47,40 +43,32 @@ const Contenu_menu = () => {
       setName(event.target.value);
     };
   
-    const handleQuantityChange = (event) => {
-      setQuantity(event.target.value);
+    const handlelienChange = (event) => {
+      setLien(event.target.value);
     };
   
-    const handlePrixChange = (event) => {
-      setPrix(event.target.value);
-    };
-  
-    const handleDescriptionChange = (event) => {
-      setDescription(event.target.value);
-    };
-  
+   
     return (
         <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',
             textAlign: 'center', display: 'flex',  gap: '30px', flexWrap: 'wrap', paddingTop:'50px'}} >
                 
           <div className="dish-form" >
           
-              <h2>Information du plat</h2>
+              <h2>Information jeu</h2>
               <hr style={{height:'10px'}}/>
   
               <div style={{display:'flex', width:'100%'}}>
                   <div style={{width:'320px',height:'520px', background:'#fff', padding:'10px'}}>
   
                       <div className="dish-preview" style={{width:'300px', height:'500px', background:'#cfbd97', textAlign:'justify'}}>
-                          <div style={{width:'300px', height:'250px', background:'#cfbd',borderRadius: '0 0 50% 50%'}}>
+                          <div style={{width:'300px', height:'250px', background:'#cfbd'}}>
                               {image && (
-                              <img src={URL.createObjectURL(image)} alt="image du plat" className="dish-image" style={{width:'300px',height:'250px' ,borderRadius: '0 0 50% 50%'}} />
+                              <img src={URL.createObjectURL(image)} alt="image du plat" className="dish-image" style={{width:'300px',height:'250px'}} />
                               )}
                           </div>
                           <h5 style={{textAlign:'center'}}>{name}</h5>
-                          <p>{prix} CFA</p>
-                          <p>{quantity}</p>
-                          <p>{description}</p>
+                          <p>{lien}</p>
+                          
                       </div>
                   </div>
   
@@ -89,7 +77,7 @@ const Contenu_menu = () => {
    
                       
                       
-                      <form style={{textAlign:'left', margin:'0px 50px'}} onSubmit={handleSubmit}>
+                      <form style={{textAlign:'left', margin: '0px 80px'}} onSubmit={handleSubmit}>
                           <div className="image-upload">
                               {/* <label htmlFor="image-input">Choisir une image</label> */}
   
@@ -99,11 +87,11 @@ const Contenu_menu = () => {
                                   accept="image/*"
                                   onChange={handleImageUpload}
                               />
-                              {imageName && <span className="image-name">{imageName}</span>}
+                              {/* {imageName && <span className="image-name">{imageName}</span>} */}
                               
                           </div>
                           <div>
-                              <p htmlFor="name">Nom du plat:</p>
+                              <p htmlFor="name">Nom du jeu:</p>
                               <input
                               type="text"
                               id="name"
@@ -112,41 +100,23 @@ const Contenu_menu = () => {
                               required
                               />
                           </div>
+                          
                           <div>
-                              <p htmlFor="prix">Prix:</p>
+                              <p htmlFor="lien">Lien : </p>
                               <input
-                              type="number"
-                              id="prix"
-                              value={prix}
-                              onChange={handlePrixChange}
-                              required
-                              step="0.01"
-                              />
-                          </div>
-                          <div>
-                              <p htmlFor="quantity">Quantité:</p>
-                              <input
-                              type="number"
-                              id="quantity"
-                              value={quantity}
-                              onChange={handleQuantityChange}
+                              type="text"
+                              id="lien"
+                              value={lien}
+                              onChange={handlelienChange}
                               required
                               />
                           </div>
-                          <div>
-                              <p htmlFor="description">Description:</p>
-                              <textarea
-                              id="description"
-                              value={description}
-                              onChange={handleDescriptionChange}
-                              required
-                              />
-                          </div>
+                          
                           <div className="actions">
-                              <button type="button" className="cancel" onClick={rejetter}>
+                              <button type="button" className="cancel" onClick={rejetter} style={{margin: '10px 10px'}}>
                               Rejeter
                               </button>
-                              <button type="submit" className="submit">
+                              <button type="submit" className="submit" style={{margin: '10px 10px'}}>
                               Valider
                               </button>
                           </div>
@@ -164,4 +134,4 @@ const Contenu_menu = () => {
     );
   };
   
-  export default Contenu_menu;
+  export default Formualire_jeu;

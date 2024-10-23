@@ -14,6 +14,7 @@ const FonctionAdmin = () => {
     const emploi =  useNavigate();
     const menu= useNavigate();
     const stats=useNavigate();
+    const jeu=useNavigate();
 
     const clickemploi = () => {
         emploi('/gestionEmploie'); // Redirige vers la page Gestion des emploie
@@ -22,7 +23,10 @@ const FonctionAdmin = () => {
         menu('/gestionMenu'); // Redirige vers la page Gestion des menus
     };
     const clickstat = () => {
-        stats('/stats'); // Redirige vers la page statistiques
+        stats('/stats'); // Redirige vers la page statistiques 
+    };
+    const clickjeu = () => {
+        jeu('/accueil_jeu'); // Redirige vers la page jeu et promo
     };
     
 
@@ -71,7 +75,9 @@ const FonctionAdmin = () => {
                 height:'150px',
                 backgroundSize: 'cover', // Pour couvrir tout le bouton
                 backgroundPosition: 'center' // Pour centrer l'image
-            }}>
+            }}
+            onClick={clickjeu}
+            >
                 PROMO & JEUX
             </button>
             <button class="col-3 " style={{
