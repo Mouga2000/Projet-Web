@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import './Statistiques.css';
 import Sidebar from '../Components/Sidebar';  // Importation de la barre latérale
-
 
 const Statistiques = () => {
     const [formData, setFormData] = useState({
@@ -86,7 +85,7 @@ const Statistiques = () => {
                     </div>
 
                     <div className="input-group">
-                        <label>Quantité</label>
+                        <label >Quantité</label>  
                         <input 
                             type="text" 
                             name="quantite" 

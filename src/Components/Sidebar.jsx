@@ -33,7 +33,7 @@ const Sidebar = () => {
       </ul>
       <div>
         <div className='logo'/>
-        <div className="logout">Se déconnecter</div>
+        <div className="logout" >Se déconnecter</div>
       </div>
     </div>
 

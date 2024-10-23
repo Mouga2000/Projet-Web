@@ -2,6 +2,7 @@
 .menu-container {
     display: flex;
     min-height: 100vh;
+    
 }
 
 /* Contenu du menu */

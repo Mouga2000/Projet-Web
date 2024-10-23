@@ -6,7 +6,6 @@ import GestionMenu from './pages/GestionMenu';
 import Statistiques from './pages/Statistiques';
 import GestionReclamations from './pages/GestionReclamations';
 
-
 function App() {
   return (
     <Router>
