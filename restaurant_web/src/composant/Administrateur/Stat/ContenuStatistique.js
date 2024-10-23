@@ -13,7 +13,7 @@ const ContenuStatistique = () => {
     return (
         <div style={{background: '#cfbd97', textAlign:'center', height:'100%'}}>
                 
-            <Entete text={test}/>
+            <Entete text={test}></Entete>
             <section style={{background:'#cfbd97', display:'flex'}}>
                 <div style={{width:'80%'}}>
                     <h5>Statisques de ...</h5>

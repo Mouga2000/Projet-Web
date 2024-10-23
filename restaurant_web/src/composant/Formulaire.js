@@ -8,8 +8,7 @@ import image5 from '../image/i5.png';
 import image6 from '../image/i6.png';
 
 const Formulaire = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    
     const produit=['Spaquettie', "Viande", "Glace", 'Oeuf', 'fruit']
     const prix=['1500', '2000', '1500', '1500', '1000']
     const description=[ 
@@ -24,9 +23,8 @@ const Formulaire = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Vous pouvez ajouter la logique de soumission ici
-        console.log('Nom:', name);
-        console.log('E-mail:', email);
+        //  la logique de soumission
+      
     };
 
     return (

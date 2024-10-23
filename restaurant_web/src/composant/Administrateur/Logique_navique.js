@@ -9,7 +9,8 @@ import GestionEmploie from './Gestion_des_emploies/GestionEmploie';
 import GestionMenu from './Gestion_des_Menu/GestionMenu';
 import AccueilAdmin from './Accueil_admin';
 import Statistique from './Stat/Statisques';
-
+import PageCreer from './Gestion_des_emploies/PageCreer';
+import CreerMenu from './Gestion_des_Menu/CreerMenu';
 
 
 const Logique = () => {
@@ -23,6 +24,8 @@ const Logique = () => {
                 <Route path="/gestionEmploie" element={<GestionEmploie/>} />
                 <Route path="/gestionMenu" element={<GestionMenu/>} />
                 <Route path="/stats" element={<Statistique/>} />
+                <Route path='/page_creer' element={<PageCreer/>}/>
+                <Route path='/detail_menu' element={<CreerMenu/>}/>
             </Routes>
         
         </Router>

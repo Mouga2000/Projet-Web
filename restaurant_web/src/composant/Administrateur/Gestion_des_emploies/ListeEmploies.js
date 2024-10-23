@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styleListe.css';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -8,6 +9,11 @@ const Liste = () => {
     const noms=["Nehemie Mouga", "Santigo", "Marrion"];
     const adresse=["djindigam.mouga@2028.ucac-icam.com", "santigo@2028.ucac-icam.com", "will.marrion@2028.ucac-icam.com"];
     const poste=["Gerant", "emploie", "emploie"];
+
+    const modifier=useNavigate();
+    const com_modif=()=>{
+        modifier('/page_creer')
+    }
 
     
 
@@ -31,8 +37,10 @@ const Liste = () => {
                             <td >{adresse[i]}</td>
                             <td >{poste[i]}</td>
                             <td>
-                                <button>Modifier</button>
-                                <button>Supprimer</button>
+                                <button style={{background:'#11AF18', color:'#fff', borderRadius:'25px'}} onClick={com_modif}>
+                                    Modifier
+                                </button>
+                                <button style={{background:'#F90A0A', color:'#fff', borderRadius:'25px'}}>Supprimer</button>
                             </td>
                         </tr>
                     ))}

@@ -13,7 +13,7 @@ const AccueilAdmin = () => {
     const test='ADMINISTRATION APPLICATION WEB';
     return (
         
-            <div style={{background: '#cfbd97', display:'flex', textAlign:'center', height:'100%'}}>
+            <div  style={{background: '#cfbd97', display:'flex', textAlign:'center', height:'100%'}}>
             
                 <Barre/>
                 

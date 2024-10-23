@@ -1,10 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {  useNavigate } from 'react-router-dom';
 
 
 
 
 const InfoEmploie = () => {
+
+    const modifier=useNavigate();
+    const com_modif=()=>{
+        modifier('/page_creer')
+    }
    
     return (
         <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',
@@ -12,7 +18,7 @@ const InfoEmploie = () => {
            
            <div style={{display:'flex', width:'80%'}}>
                 <h4 style={{width:'80%', textAlign:'left'}}>Les comptes des Personnels</h4>
-                <button style={{border:'none', background:'#cfbd97'}}>
+                <button style={{border:'none', background:'#cfbd97'}} onClick={com_modif}>
                     Ajouter un compte
                 </button>
 

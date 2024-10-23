@@ -22,7 +22,7 @@ root.render(
       
       <Logique/>
       
-     {/* <App/>*/}
+      {/*<App/>*/}
 
 
     
