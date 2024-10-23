@@ -14,6 +14,9 @@ import CreerMenu from './Gestion_des_Menu/CreerMenu';
 import Accueil_Jeu from './Jeux&Promo/Accueil_Jeu';
 import Creer_jeu from './Jeux&Promo/Creer_jeux';
 import Creer_promo from './Jeux&Promo/Creer_promo';
+import Accueil_reclamation from './Reclamation/Accueil_reclamation';
+import Reponse_reclamation from './Reclamation/Reponse_reclamation';
+import App from '../../App';
 
 
 const Logique = () => {
@@ -32,6 +35,10 @@ const Logique = () => {
                 <Route path='/accueil_jeu' element={<Accueil_Jeu/>}/>
                 <Route path='/creer jeu' element={<Creer_jeu/>}/>
                 <Route path='/creer promo' element={<Creer_promo/>}/>
+                <Route path='/accueil reclamation' element={<Accueil_reclamation/>}/>
+                <Route path='/description reclamation' element={<Reponse_reclamation/>}/>
+                <Route path='/deconnecter' element={<App/>}/>
+
 
             </Routes>
         

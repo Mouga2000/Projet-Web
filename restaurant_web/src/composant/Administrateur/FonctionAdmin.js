@@ -15,6 +15,7 @@ const FonctionAdmin = () => {
     const menu= useNavigate();
     const stats=useNavigate();
     const jeu=useNavigate();
+    const recla=useNavigate();
 
     const clickemploi = () => {
         emploi('/gestionEmploie'); // Redirige vers la page Gestion des emploie
@@ -28,6 +29,9 @@ const FonctionAdmin = () => {
     const clickjeu = () => {
         jeu('/accueil_jeu'); // Redirige vers la page jeu et promo
     };
+    const clickrecla=()=>{
+        recla('/accueil reclamation')
+    }
     
 
     return (
@@ -86,7 +90,9 @@ const FonctionAdmin = () => {
                 height:'150px',
                 backgroundSize: 'cover', // Pour couvrir tout le bouton
                 backgroundPosition: 'center' // Pour centrer l'image
-            }}>
+            }}
+            onClick={clickrecla}
+            >
                 RECLAMATIONS
             </button>
             <button class="col-3 " style={{

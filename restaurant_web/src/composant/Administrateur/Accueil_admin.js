@@ -13,11 +13,11 @@ const AccueilAdmin = () => {
     const test='ADMINISTRATION APPLICATION WEB';
     return (
         
-            <div  style={{background: '#cfbd97', display:'flex', textAlign:'center', height:'100%'}}>
+            <div  style={{background: '#cfbd97', textAlign:'center',height: '100%',display: 'flex'}}>
             
                 <Barre/>
                 
-                <div style={{ textAlign:'center',flex:1, color:'#ffffff', fontFamily:'times new roman', alignItems:'center', height:'100%'}}>                  
+                <div  style={{ textAlign:'center',flex:1, color:'#ffffff', fontFamily:'times new roman', alignItems:'center',height: '100%', flexDirection:'column'}}>                  
                     <Entete text={test}/>
                     <FonctionAdmin/>
                     

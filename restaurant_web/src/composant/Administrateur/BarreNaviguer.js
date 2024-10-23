@@ -37,7 +37,7 @@ const Barre = () => {
                         <Link className="nav-link" to="/accueil_jeu" style={{ color: "#cfbd97" }}>PROMO & JEUX</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#" style={{ color: "#cfbd97" }}>GESTION DES RECLAMATIONS</Link>
+                        <Link className="nav-link" to='/accueil reclamation' style={{ color: "#cfbd97" }}>GESTION DES RECLAMATIONS</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="#" style={{ color: "#cfbd97" }}>PARAMETRES</Link>
@@ -46,7 +46,7 @@ const Barre = () => {
             </nav>
 
             <div className="p-3" style={{ background: '#000000' }}>
-                <Link className="nav-link" to="#" style={{ color: "#cfbd97" }}>DECONNECTER</Link>
+                <Link className="nav-link" to="/deconnecter" style={{ color: "#cfbd97" }}>DECONNECTER</Link>
                 <img src={images2} alt='photo restaurant' style={{ height: '175px', width: '175px', borderRadius: '50%' }} />
             </div>
         </div>

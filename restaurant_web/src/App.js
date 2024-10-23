@@ -13,7 +13,7 @@ import Nav from './composant/entete';
 
 const App = () => {
     return (
-      <Router>
+      <>
         <div style={{background: 'linear-gradient(180deg,#cfbd97, #000000 )'}}>
            
               {/*<Nav />*/}
@@ -24,8 +24,7 @@ const App = () => {
                 <Route path="/apropos" element={<Apropos />} />
                 <Route path="/seconnecter" element={<Seconnecter />} />
                 <Route path="/creercompte" element={<CreerCompte />} /> 
-                {/* <Route path="/" element={<AccueilAdmin/>} /> 
-                <Route path="/gestionEmploie" element={<GestionEmploie/>} /> */}
+                
                            
                         
               </Routes>         
@@ -34,7 +33,7 @@ const App = () => {
            
            
         </div>
-      </Router>
+      </>
     );
 };
 
