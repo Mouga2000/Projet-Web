@@ -3,12 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Imagecon from '../../image/i14.png';
 import CreerCompte from './CreerCompte';
 
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
 const SeConnecter = () => {
+
+        const a=useNavigate();
+        const base_donne='Etudiant';
+
+
+
     const handleSubmit = (event) => {
         event.preventDefault();
         // Gestion de la soumission du formulaire
@@ -16,8 +22,32 @@ const SeConnecter = () => {
         const motdepasse = event.target.motdepasse.value;
         console.log('Email:', email);
         console.log('Mot de passe:', motdepasse);
+        
+        
         // Ajoutez ici votre logique de connexion
+        
+
+        if (base_donne === 'Etudiant') {
+            a('/accueil étudiant');
+        }
+        
+        if (base_donne === 'Gerant') {
+            a('/');
+        }
+
+        if (base_donne === 'Employé') {
+            a('/');
+        }
+
+        if (base_donne === 'Administrateur') {
+            a('/accueiladmin');
+        }
+
+
     };
+                    
+
+                    
 
     return (
        

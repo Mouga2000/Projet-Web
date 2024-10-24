@@ -1,8 +1,8 @@
-// WelcomeSection.js
 import React from 'react';
 import Rectangle from '../image/Rectangle1.png';
-import logo from '../image/logos.jpg'; // Import de l'image du logo
-// text-center p-4
+import logo from '../image/logos.jpg'; 
+
+
 
 const Sectionier = () => {
     return (
@@ -45,10 +45,7 @@ const Sectionier = () => {
                     le lieu où tous les délices se confrontent
                     </p>
                 
-                {/* <p style={{textAlign: 'left', marginLeft:'50px', fontSize:20, fontWeight:'bold'}}> 
-                    Menu proposé
-                    </p> */}
-            </div>
+                            </div>
         </section>
     );
 };

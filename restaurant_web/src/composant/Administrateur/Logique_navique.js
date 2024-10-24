@@ -18,6 +18,13 @@ import Accueil_reclamation from './Reclamation/Accueil_reclamation';
 import Reponse_reclamation from './Reclamation/Reponse_reclamation';
 import App from '../../App';
 
+import Services from '../Accueil/nos_service';
+import SeConnecter from '../Accueil/Seconnecter';
+import CreerCompte from '../Accueil/CreerCompte';
+import Apropos from '../Accueil/Apropos';
+import Accueil from '../Accueil/Accueil';
+
+import Services_E from '../Etudiant/Service_E';
 
 const Logique = () => {
     
@@ -37,7 +44,16 @@ const Logique = () => {
                 <Route path='/creer promo' element={<Creer_promo/>}/>
                 <Route path='/accueil reclamation' element={<Accueil_reclamation/>}/>
                 <Route path='/description reclamation' element={<Reponse_reclamation/>}/>
-                <Route path='/deconnecter' element={<App/>}/>
+                <Route path='/deconnecter' element={<Accueil/>}/>
+
+
+                <Route path="/acceuil" element={<Accueil/>} />
+                <Route path="/service" element={<Services />} />
+                <Route path="/apropos" element={<Apropos />} />
+                <Route path="/seconnecter" element={<SeConnecter />} />
+                <Route path="/creercompte" element={<CreerCompte />} /> 
+
+                <Route path='/service etudiant' element={<Services_E />} /> 
 
 
             </Routes>

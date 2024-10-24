@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import image1 from '../image/i1.png';
-import image2 from '../image/i2.png';
-import image3 from '../image/i3.png';
-import image4 from '../image/i4.png';
-import image5 from '../image/i5.png';
-import image6 from '../image/i6.png';
+import image1 from '../../image/i1.png';
+import image2 from '../../image/i2.png';
+import image3 from '../../image/i3.png';
+import image4 from '../../image/i4.png';
+import image5 from '../../image/i5.png';
+import image6 from '../../image/i6.png';
 
-const Formulaire = () => {
+const Formulaire_etudiant = () => {
     
     const produit=['Spaquettie', "Viande", "Glace", 'Oeuf', 'fruit']
     const prix=['1500', '2000', '1500', '1500', '1000']
@@ -78,7 +78,16 @@ const Formulaire = () => {
                             
                     />
                     
-                    <div style={{position:'relative'}}>
+                    <div style={{position:'relative', display:'flex', justifyContent:'space-between', width:'100%'}}>
+
+                        <button
+                        style={{backgroundColor:'green', color: '#ffffff', border: 'none', outline: 'none',
+                            textAlign: 'justify', fontFamily: 'times new romain', position: 'relative',
+                            bottom:'0', right:'0', top:'10px'}}
+                        >
+                            Ajouter
+                        </button>
+
                         <button type="submit"
                         style={{backgroundColor:'#000000', color: '#ffffff', border: 'none', outline: 'none',
                             textAlign: 'justify', fontFamily: 'times new romain', borderRadius: '25% 0 0 25%', position: 'relative',
@@ -86,6 +95,7 @@ const Formulaire = () => {
                         }} >
                             En savoir plus
                         </button>
+                        
                     </div>
                 </form>
             ))}
@@ -94,4 +104,4 @@ const Formulaire = () => {
 };
 
 
-export default Formulaire;
+export default Formulaire_etudiant;
