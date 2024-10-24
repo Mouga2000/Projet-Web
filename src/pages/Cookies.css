@@ -1,0 +1,72 @@
+/* InfoCookies.css */
+.info-cookies {
+  display: flex;
+  flex-direction: column; /* Organisation verticale */
+  justify-content: space-between; /* Répartir l'espace */
+  min-height: 450px; /* Hauteur minimale plus grande */
+  padding: 20px;
+  background: linear-gradient(to right, #D6C1A7, #4D4031);
+    color: black;
+    font-family: 'Times New Roman';
+    border-radius: 8px;
+    margin: 20px 0; /* Ajoute de l'espace autour du conteneur */
+  }
+  
+  .cookie-content {
+    padding: 10px; /* Espace interne autour du contenu des cookies */
+    max-height: 300px; /* Limite la hauteur de la section */
+  overflow-y: auto; /* Active la barre de défilement verticale si le contenu dépasse */
+  }
+  
+  /* Media Queries pour différentes tailles d'écran */
+  
+  /* Petits appareils (smartphones) */
+  @media (max-width: 600px) {
+    .info-cookies {
+      padding: 3%;
+      margin-top: 0%;
+    }
+  
+    .cookie-content {
+      padding: 3%;
+      
+    }
+    
+    h2 {
+      font-size: 1.5rem; /* Taille de la police réduite pour les petits écrans */
+      
+    }
+  }
+  
+  /* Tablettes */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .info-cookies {
+      padding: 4%;
+      margin-top: 3%;
+    }
+  
+    .cookie-content {
+      padding: 4%;
+    }
+  
+    h2 {
+      font-size: 2rem; /* Taille adaptée aux tablettes */
+    }
+  }
+  
+  /* Grands écrans (ordinateurs) */
+  @media (min-width: 1025px) {
+    .info-cookies {
+      padding: 40px; /* Garde les mêmes dimensions pour les grands écrans */
+      margin-top: 20px;
+    }
+  
+    .cookie-content {
+      padding: 20px;
+    }
+    
+    h2 {
+      font-size: 2.5rem; /* Grande taille de police pour les grands écrans */
+    }
+  }
+  
