@@ -19,7 +19,7 @@ const Diagramme = () => {
 
   const data2 = [
     { x: 'Janvier', y: 7089 },
-    { x: 'Frévrier', y: 45000 },
+    { x: 'Frévrier', y: 10000 },
     { x: 'Mars', y: 80 },
     { x: 'Avril', y: 60000 },
     { x: 'Mai', y: 0 },
@@ -34,13 +34,13 @@ const Diagramme = () => {
   ];
 
   return (
-    <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',width:'800px', height:'550px',
+    <div className='container' style={{justifyContent: 'center', alignContent: 'center', alignItems: 'center',width:'800px', height:'380px',
         textAlign: 'center', display: 'flex',  gap: '10px', flexWrap: 'wrap', paddingTop:'5px', background:'#ffffff' }} >
 
             
         
             <VictoryChart theme={VictoryTheme.material}
-                width={800}
+                width={900}
                 height={500}
             >
                 <VictoryAxis label="Date" 

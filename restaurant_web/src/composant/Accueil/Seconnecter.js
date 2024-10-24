@@ -32,7 +32,7 @@ const SeConnecter = () => {
         }
         
         if (base_donne === 'Gerant') {
-            a('/');
+            a('/Accueil gerant');
         }
 
         if (base_donne === 'Employé') {
@@ -51,7 +51,7 @@ const SeConnecter = () => {
 
     return (
        
-        <div className="container " style={{fontFamily:'times new roman', height:'100vh'}}>
+        <div className="container " style={{fontFamily:'times new roman', height:'100vh', background: 'linear-gradient(1800deg, #cfbd97,#000000)'}}>
             <div className="row justify-content-center" style={{paddingTop:'75px'}}>
                 <div className="col-md-6">
                     

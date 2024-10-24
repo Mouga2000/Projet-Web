@@ -14,6 +14,7 @@ import Logique_etudiant from './composant/Etudiant/logique';
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -24,7 +25,7 @@ root.render(
       {/*<Logique/> */}
       
      <App/>
-     
+
         {/*<Logique_etudiant/>*/}
 
 

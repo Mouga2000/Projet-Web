@@ -1,45 +1,3 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Services from './composant/Accueil/nos_service';
-// import Seconnecter from './composant/Accueil/Seconnecter';
-// import CreerCompte from './composant/Accueil/CreerCompte';
-// import Apropos from './composant/Accueil/Apropos';
-// import Accueil from './composant/Accueil/Accueil';
-// import Nav from './composant/entete';
-
-
-
-
-// const App = () => {
-//     return (
-//       <>
-//         <div style={{background: 'linear-gradient(180deg,#cfbd97, #000000 )'}}>
-           
-//               {/*<Nav />*/}
-//               <Routes>
-//                 <Route path="/" element={<Accueil/>} />
-//                 <Route path="/acceuil" element={<Accueil/>} />
-//                 <Route path="/service" element={<Services />} />
-//                 <Route path="/apropos" element={<Apropos />} />
-//                 <Route path="/seconnecter" element={<Seconnecter />} />
-//                 <Route path="/creercompte" element={<CreerCompte />} /> 
-                
-                           
-                        
-//               </Routes>         
-
-                           
-           
-           
-//         </div>
-//       </>
-//     );
-// };
-
-// export default App;
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -66,10 +24,20 @@ import Services_E from './composant/Etudiant/Service_E';
 import Accueil_Etudiant from './composant/Etudiant/Accueil_Etudiant';
 import Apropo_E from './composant/Etudiant/APropos';
 
+
+import Gerant_accueil from './composant/Gerant/Gerant_accueil';
+import Gerant_com from './composant/Gerant/gerant-commande';
+import Gerant_employe from './composant/Gerant/gerant-employe';
+import Gerant_stat from './composant/Gerant/gerant-stat';
+import Gerant_reclamation from './composant/Gerant/gerant-reclamation';
+
+
+
 const App = () => {
     
     return (
         <Router>
+          <div style={{background: '#cfbd97'}}>
         
             <Routes>
 
@@ -104,8 +72,20 @@ const App = () => {
                 <Route path='/service etudiant' element={<Services_E />} /> 
                 <Route path='/A propos etudiant' element={<Apropo_E />} />
 
+
+                {/* Gerant */}
+                
+                <Route path='/Accueil gerant' element={<Gerant_accueil />} />
+                <Route path='/gerant_commande' element={<Gerant_com />} />
+                <Route path='/gerant_employe' element={<Gerant_employe />} />
+                <Route path='/gerant_satistique' element={<Gerant_stat />} />
+                <Route path='/gerant_reclamation' element={<Gerant_reclamation />} />
+                <Route path='/deconnecter' element={<Accueil />} />
+
+
+
             </Routes>
-        
+        </div>
         </Router>
            
     );
