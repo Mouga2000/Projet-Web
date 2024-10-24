@@ -1,0 +1,109 @@
+.Jeux {
+    padding: 3%;
+    background: linear-gradient(to right, #D6C1A7, #4D4031);
+    color: black;
+    text-align: center;
+  }
+  
+/* Style général de la section */
+.games-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+    background: linear-gradient(to right, #D6C1A7, #4D4031); ;
+    color: #333;
+  }
+  
+  .online-game1 {
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #D6C1A7;
+  }
+  .online-game2 {
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color:#D6C1A7;
+  }
+  
+  .online-game img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .online-game p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .online-game a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .online-game a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries pour rendre la section responsive */
+  
+  /* Petits écrans (smartphones) */
+  @media (max-width: 600px) {
+    .online-games-section {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .online-game {
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      padding: 0;
+    }
+  
+    .online-game img {
+      padding-bottom: 5px;
+    }
+  
+    .online-game p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Tablettes */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .online-game {
+      width: 45%;
+      margin: 15px;
+    }
+  
+    .online-game p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Grands écrans (ordinateurs) */
+  @media (min-width: 1025px) {
+    .online-game {
+      width: 30%;
+      margin: 20px;
+    }
+  
+    .online-game p {
+      font-size: 1.1rem;
+    }
+  }
+  

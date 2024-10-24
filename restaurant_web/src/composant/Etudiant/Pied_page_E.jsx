@@ -26,13 +26,13 @@ const Pied_page_E = () => {
                     }}
                 >
                     <li className="nav-item">
-                        <Link className='nav-link'   to="#">Jeux & Promos</Link>
+                        <Link className='nav-link'   to="/jeux">Jeux & Promos</Link>
                     </li>
                     <li className="nav-item">
                         <Link className='nav-link'   to="#">Historique</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className='nav-link'  to='/accueil etudiant'>Menu</Link>
+                        <Link className='nav-link'  to='/accueil étudiant'>Menu</Link>
                     </li>
                     <li className="nav-item">
                         <Link className='nav-link'  to="#">
@@ -44,13 +44,13 @@ const Pied_page_E = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className='nav-link'  to='/service etudiant'>Réclamation</Link>
+                        <Link className='nav-link'  to='/reclamation'>Réclamation</Link>
                     </li>
                     <li className="nav-item">
                         <Link className='nav-link'   to="#">Parrainage</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className='nav-link'  to="/A propos etudiant">Profil</Link>
+                        <Link className='nav-link'  to="/profil">Profil</Link>
                     </li>
                 </ul>
             </div>

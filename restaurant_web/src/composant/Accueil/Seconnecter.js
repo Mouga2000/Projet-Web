@@ -36,7 +36,7 @@ const SeConnecter = () => {
         }
 
         if (base_donne === 'Employé') {
-            a('/');
+            a('/accueil employé');
         }
 
         if (base_donne === 'Administrateur') {

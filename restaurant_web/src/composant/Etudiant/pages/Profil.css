@@ -1,0 +1,58 @@
+/* Profil.css */
+.profil {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .logout-btn {
+    background: linear-gradient(to right, #000, #4D4031);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .nav-link {
+    text-decoration: none; /* Retire le soulignement par défaut des liens */
+    color: black;          /* Définit la couleur du texte des liens en noir */
+    padding: 10px;         /* Ajoute un espacement intérieur autour du lien pour rendre le lien plus cliquable */
+    gap: 10px;
+    display: flex;
+  }
+  
+  .nav-link.active {
+    font-weight: bold; /* Rend le texte en gras pour les liens actifs */
+    color: #000;        /* Change la couleur du texte en rouge pour les liens actifs */
+  }
+  
+  /* Media queries pour rendre le design responsif */
+  @media (max-width: 768px) {
+    .profil {
+      padding: 20px;
+    }
+  
+    .logout-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profil {
+      padding: 10px;
+    }
+  
+    .logout-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  .avatar{
+    background: url('../assets/image/avatar.png') no-repeat center center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+  }

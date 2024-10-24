@@ -23,6 +23,11 @@ import Accueil from './composant/Accueil/Accueil';
 import Services_E from './composant/Etudiant/Service_E';
 import Accueil_Etudiant from './composant/Etudiant/Accueil_Etudiant';
 import Apropo_E from './composant/Etudiant/APropos';
+import Cookies from './composant/Etudiant/pages/Cookies';
+import JeuxxPromo from './composant/Etudiant/pages/Jeux';
+import Reclamation from './composant/Etudiant/pages/reclamation';
+import Promotion from './composant/Etudiant/pages/Promotion';
+import Profil from './composant/Etudiant/pages/Profil';
 
 
 import Gerant_accueil from './composant/Gerant/Gerant_accueil';
@@ -30,6 +35,12 @@ import Gerant_com from './composant/Gerant/gerant-commande';
 import Gerant_employe from './composant/Gerant/gerant-employe';
 import Gerant_stat from './composant/Gerant/gerant-stat';
 import Gerant_reclamation from './composant/Gerant/gerant-reclamation';
+
+import Accueil_Employe from './composant/Employé/pages/Accueil_Employe';
+import GestionCommandes from './composant/Employé/pages/GestionCommandes';
+import Menu from './composant/Employé/pages/GestionMenu';
+import Statistiques from './composant/Employé/pages/Statistiques';
+import GestionReclamations from './composant/Employé/pages/GestionReclamations';
 
 
 
@@ -71,6 +82,12 @@ const App = () => {
                 <Route path="/accueil étudiant" element={<Accueil_Etudiant/>}/>
                 <Route path='/service etudiant' element={<Services_E />} /> 
                 <Route path='/A propos etudiant' element={<Apropo_E />} />
+                <Route path='/profil' element={<Profil />} />
+
+                <Route path='/cookies' element={<Cookies />} />
+                <Route path='/jeux' element={<JeuxxPromo />} />
+                <Route path='/reclamation' element={<Reclamation />} />
+                <Route path='/Promotion' element={<Promotion />} />
 
 
                 {/* Gerant */}
@@ -81,6 +98,13 @@ const App = () => {
                 <Route path='/gerant_satistique' element={<Gerant_stat />} />
                 <Route path='/gerant_reclamation' element={<Gerant_reclamation />} />
                 <Route path='/deconnecter' element={<Accueil />} />
+
+                {/*Employé */}
+                <Route path="/accueil employé" element={<Accueil_Employe />} />
+                <Route path="/gestion-commandes" element={<GestionCommandes />} />
+                <Route path="/gestion-menu" element={<Menu />} />
+                <Route path="/statistiques" element={<Statistiques />} />
+                <Route path="/gestion-reclamations" element={<GestionReclamations />} />
 
 
 

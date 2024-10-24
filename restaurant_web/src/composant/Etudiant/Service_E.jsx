@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Entete_etudiants from './Entete_etudiant';
 import Sectionier from '../Section_page';
+import Pied_page_E from './Pied_page_E';
 
 const Services_E = () => {
     return (
@@ -29,7 +30,7 @@ const Services_E = () => {
                 </p>
             </div>
             <div style={{ marginTop: 'auto' }}>
-                
+                    <Pied_page_E/>
             </div>
         </div>
     );
