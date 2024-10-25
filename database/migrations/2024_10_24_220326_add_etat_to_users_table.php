@@ -27,7 +27,6 @@ class AddEtatToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            // Supprimer la colonne 'etat' si on annule la migration
             $table->dropColumn('etat');
         });
     }

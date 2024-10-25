@@ -39,3 +39,9 @@ Route::middleware(['auth'])->group(function () {
 Route::post('/register', [AuthController::class, 'register']);  // Route pour création de compte
 
 Route::post('/login', [AuthController::class, 'login']);    // Route pour la connexion
+
+Route::get('/employees', [AuthController::class, 'getEmployees']);
+
+Route::post('/registerAdmin', [AuthController::class, 'registerAdmin']);
+
+Route::delete('/employees/{id}', [AuthController::class, 'deleteEmployee']);
