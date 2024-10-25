@@ -26,7 +26,7 @@ const Nav = () => {
                     <div className="collapse navbar-collapse" id="navbarNav" >
                         <ul className="navbar-nav mx-auto" style={{ width: '100%', justifyContent: 'space-between', width:'90%', fontFamily: 'times new roman' }}> {/* Ajoutez mx-auto pour centrer */}
                             <li className="nav-item">
-                                <a className='nav-link' style={{color: '#ffffff' }} href="#">Jeux & Promos</a>
+                                <Link className='nav-link' style={{color: '#ffffff' }} href="/jeux">Jeux & Promos</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className='nav-link' style={{color: '#ffffff' }} to="/acceuil">Accueil</Link>

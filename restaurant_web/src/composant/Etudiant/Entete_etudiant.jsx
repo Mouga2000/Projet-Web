@@ -24,7 +24,7 @@ const Entete_etudiants = () => {
                     <div className="collapse navbar-collapse" id="navbarNav" >
                         <ul className="navbar-nav mx-auto" style={{ width: '100%', justifyContent: 'space-between', width:'90%', fontFamily: 'times new roman' }}> {/* Ajoutez mx-auto pour centrer */}
                             <li className="nav-item">
-                                <Link className='nav-link' style={{color: '#ffffff' }} to="#">Jeux & Promos</Link>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to="/jeux">Jeux & Promos</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className='nav-link' style={{color: '#ffffff' }} to='/accueil étudiant'>Accueil</Link>

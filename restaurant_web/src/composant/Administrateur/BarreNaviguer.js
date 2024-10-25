@@ -13,7 +13,7 @@ const Barre = () => {
     };
 
     return (
-        <div className="d-flex flex-column" style={{ background: '#000000', color: "#cfbd97", width: "250px", height: '100vh', fontFamily: 'Times New Roman', textAlign: 'center' }}>
+        <div className="d-flex flex-column" style={{ background: '#000000', color: "#cfbd97", width: "250px", height: '100vh', fontFamily: 'Times New Roman', textAlign:'center', justifyContent:'center', alignItems:'center'}}>
             <div className="p-3">
                 <img src={images} alt='photo administrateur' style={{ height: '150px', width: '150px', borderRadius: '50%' }} />
                 <h4>{nom_admin}</h4>

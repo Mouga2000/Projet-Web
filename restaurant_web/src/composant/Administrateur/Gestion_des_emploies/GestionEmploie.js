@@ -19,7 +19,7 @@ const GestionEmploie = () => {
             color:'#ffffff', fontFamily:'times new roman',  alignItems:'center'}}>
             <Entete text={test}/>
             <InfoEmploie/>
-            <Liste></Liste>
+            <Liste/>
             
             
            </div>

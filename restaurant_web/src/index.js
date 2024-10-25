@@ -11,6 +11,7 @@ import AccueilAdmin from './composant/Administrateur/Accueil_admin';
 import Logique from './composant/Administrateur/Logique_navique';
 import Logique_etudiant from './composant/Etudiant/logique';
 
+//import App from './test';
 
 
 
