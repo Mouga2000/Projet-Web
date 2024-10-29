@@ -36,7 +36,7 @@ const Entete_etudiants = () => {
                                 <Link className='nav-link' style={{color: '#ffffff' }} to="/A propos etudiant">À propos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className='nav-link' style={{color: '#ffffff' }} to='#'>
+                                <Link className='nav-link' style={{color: '#ffffff' }} to='/deconnecter'>
                                     <img src={im} alt='image connection' style={{width:'60px', height:'40px'}}/>
                                 </Link>
                             </li>  

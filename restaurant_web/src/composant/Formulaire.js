@@ -34,7 +34,7 @@ const Formulaire = () => {
             
             {produit.map((produit, i) => (
                 <form onSubmit={handleSubmit} style={{justifyContent: 'center', alignItems:'center',
-                    backgroundColor: '#cfbd97', width: '250px', height: '400px', marginTop: '30px'
+                    backgroundColor: '#cfbd97', width: '250px', height: '440px', marginTop: '30px'
                 }} key={i}>
 
                     <img 

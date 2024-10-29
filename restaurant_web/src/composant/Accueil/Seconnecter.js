@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const SeConnecter = () => {
 
         const a=useNavigate();
-        const base_donne='Administrateur';
+        const base_donne='Etudiant';
 
 
 
